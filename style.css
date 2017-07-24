@@ -19,8 +19,8 @@ body{
     font-family: Palatino, Times, serif;
     background-color: #ddffdd;
     margin: 20px;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 12px;
+    line-height: 1.2;
     display: flex;
     flex-direction: column;
 }
@@ -71,11 +71,12 @@ header{
 
 #main_nav{
     text-align: center;
+    width: 100%;
 }
 
 #main_nav a{
     display: block;
-    padding: 10px 2%;
+    padding: 10px 8%;
     background: #ffdddd;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -89,37 +90,55 @@ header{
   background-color: #ddffff;
 }
 
+div {
+  margin: 10px;
+}
+
 #sidebar_content{
   background-color: #ffffdd;
   align-content: space-between;
 }
 #site_footer{
   background-color: #ddddff;
-  display: block;
+  display: flex;
   height: 40px;
   padding-bottom: 15px;
   margin-bottom: 20px;
-  text-align: center;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 
 }
 
 #site_footer a{
-
+  padding-left: 20px;
 }
 
 /* ---------- Tablet styling here -------    */
 
 @media screen and ( min-width: 600px ) {
 
+#main_nav{
+  width: 100%;
+}
 
-#main_nav a {
-  width: 30%;
+#main_nav a{
   display: inline;
+  width: auto;
 }
 
 body {
   margin:10%;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#sidebar_content {
+  display: flex;
+  flex-flow: row;
+  align-content: space-between;
+}
+#sidebar_content div{
+  flex-basis: 33%;
 }
 
 /* --------- Big Terminal styling here --------   */
@@ -132,20 +151,18 @@ body {
 header {
   display: flex;
   flex-flow: row;
+  align-items: center;
+}
+
 }
 #main_content {
   display: flex;
   flex-flow: row;
   align-content: space-between;
 }
-main_content h1 {
-  flex: 2;
+#main_content div:nth-child(1){
+  flex:2;
 }
-main_content h2 {
-  flex: 1;
+#main_content div:nth-child(2){
+  flex:1;
 }
-
-#sidebar_content {
-  display: flex;
-  flex-flow: row;
-  align-content: space-between;
