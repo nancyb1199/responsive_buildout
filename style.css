@@ -62,7 +62,6 @@ header{
 
 #site_container{
     padding: 20px;
-    max-width: 1100px;
     margin: 0 auto;
     background: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -88,6 +87,8 @@ header{
 
 #main_content{
   background-color: #ddffff;
+/*  padding-top: 10px;
+  padding-bottom: 5px; */
 }
 
 div {
@@ -97,7 +98,10 @@ div {
 #sidebar_content{
   background-color: #ffffdd;
   align-content: space-between;
+  /* padding-top: 10px;
+  padding-bottom: 5px; */
 }
+
 #site_footer{
   background-color: #ddddff;
   display: flex;
@@ -116,6 +120,7 @@ div {
 /* ---------- Tablet styling here -------    */
 
 @media screen and ( min-width: 600px ) {
+
 
 #main_nav{
   width: 100%;
@@ -153,6 +158,17 @@ header {
   flex-flow: row;
   align-items: center;
 }
+
+#main_nav{
+  width: 100%
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+/* #main_nav a{
+  display: inline;
+  width: auto;  */
 
 }
 #main_content {
